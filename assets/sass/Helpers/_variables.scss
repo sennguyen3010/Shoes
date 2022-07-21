@@ -1,0 +1,48 @@
+//khai báo biến
+//bg
+$bg-c1-primary: #f5f5f5;
+$bg-c2-primary: #f8f8f8;
+$bg-c3-primary: #dedddc;
+$bg-c4-primary: #D9D9D9;
+$bg-c5-primary: #CCCCCC;
+$bg-c1-secondary: #e1b067;
+$bg-c2-secondary: #000000;
+$bg-c3-secondary: #AE18E2;
+$bg-none: transparent;
+
+//text-color
+$text-c1-dark: #000000;
+$text-c2-dark: #140101;
+$text-c3-dark: #1E1D1D;
+$text-c4-dark: #CBC9C9;
+$text-c1-light: #F7F7F7;
+$text-c2-light: #FFFFFF;
+$text-c3-light: #FFFCFC;
+$text-c4-light: #FFF8F8;
+$text-c1-red: #F50E0E;
+$text-c2-red: #FC0303;
+$text-c1-green: #1ED90E;
+
+
+//text-size
+$text-xs: 13px;
+$text-base: 16px;
+$text-xl: 20px;
+$text-2xl: 24px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+
+
+//font-weight
+$text-thin: 200;
+$text-light: 300;
+$text-regular: 400;
+$text-medium: 500;
+$text-semibold: 600;
+$text-bold: 700;
+
+//break points
+$bp-xl: 1200px;
+$bp-lg: 992px;
+$bp-md: 768px;
+$bp-sm: 576px;
