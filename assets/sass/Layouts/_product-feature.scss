@@ -1,0 +1,73 @@
+.productFeature {
+  margin-top: 150px;
+
+  .productFeature-title {
+    text-align: center;
+    margin-bottom: 70px;
+    @include text($text-4xl, $text-regular, $text-c1-dark);
+  }
+
+  .productFeature-item {
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+    }
+
+    .productFeature-item-top {
+      padding: 20px;
+      background-color: $bg-c2-primary;
+
+      .productFeature-item-img {
+        display: flex;
+        justify-content: center;
+
+        img {
+          padding: 50px;
+        }
+      }
+      h4 {
+        @include text($text-2xl, $text-thin, $text-c1-dark);
+      }
+      p {
+        @include text($text-xl, $text-thin, $text-c4-dark);
+      }
+    }
+
+    .productFeature-item-bottom {
+      display: flex;
+
+      .item-bottom-text {
+        text-align: center;
+        a {
+          padding: 20px 40px;
+        }
+      }
+      a {
+        @include button(
+          $text-2xl,
+          $text-thin,
+          $text-c1-dark,
+          14px 0px,
+          $bg-c1-secondary,
+          $bg-c4-secondary,
+          $text-c2-light,
+          all 0.3s
+        );
+        cursor: pointer;
+        display: block;
+      }
+      .productFeature-btn {
+      }
+      .productFeature-price {
+        background-color: $bg-c3-primary;
+        font-weight: $text-semibold;
+        &:hover {
+          background-color: $bg-c3-primary;
+          color: $text-c1-dark;
+        }
+      }
+    }
+  }
+}

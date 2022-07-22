@@ -84,6 +84,77 @@ a {
   width: 0;
 }
 
+.productFeature {
+  margin-top: 150px;
+}
+.productFeature .productFeature-title {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+.productFeature .productFeature-item {
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease-in-out;
+}
+.productFeature .productFeature-item:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.productFeature .productFeature-item .productFeature-item-top {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.productFeature .productFeature-item .productFeature-item-top .productFeature-item-img {
+  display: flex;
+  justify-content: center;
+}
+.productFeature .productFeature-item .productFeature-item-top .productFeature-item-img img {
+  padding: 50px;
+}
+.productFeature .productFeature-item .productFeature-item-top h4 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #000000;
+}
+.productFeature .productFeature-item .productFeature-item-top p {
+  font-size: 20px;
+  font-weight: 200;
+  color: #cbc9c9;
+}
+.productFeature .productFeature-item .productFeature-item-bottom {
+  display: flex;
+}
+.productFeature .productFeature-item .productFeature-item-bottom .item-bottom-text {
+  text-align: center;
+}
+.productFeature .productFeature-item .productFeature-item-bottom .item-bottom-text a {
+  padding: 20px 40px;
+}
+.productFeature .productFeature-item .productFeature-item-bottom a {
+  font-size: 24px;
+  font-weight: 200;
+  color: #000000;
+  padding: 14px 0px;
+  background-color: #e1b067;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: block;
+}
+.productFeature .productFeature-item .productFeature-item-bottom a:hover {
+  background-color: #f8b653;
+  color: #ffffff;
+}
+.productFeature .productFeature-item .productFeature-item-bottom .productFeature-price {
+  background-color: #dedddc;
+  font-weight: 600;
+}
+.productFeature .productFeature-item .productFeature-item-bottom .productFeature-price:hover {
+  background-color: #dedddc;
+  color: #000000;
+}
+
 .carousels {
   position: relative;
   height: 530px;
