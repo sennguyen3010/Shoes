@@ -83,3 +83,63 @@ a {
   transition: all 0.5s;
   width: 0;
 }
+
+.carousels {
+  position: relative;
+  height: 530px;
+}
+.carousels .carousel-layout {
+  overflow-x: hidden;
+}
+.carousels .carousel-layout .carousel-circle .carousel-circle-item {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: #ffffff;
+  margin-right: 20px;
+}
+.carousels .carousel-layout .carousel-circle .active {
+  background-color: #f8b653;
+}
+.carousels .carousel-layout .carousel-item_card {
+  height: 530px;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content {
+  right: 0;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content h5 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000000;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content .carousel-button {
+  margin: 40px 0;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content .carousel-button .carousel-btn_buy {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 14px 30px;
+  background-color: #f8b653;
+  transition: all 0.3s;
+}
+.carousels .carousel-layout .carousel-item_card .carousel-content .carousel-button .carousel-btn_buy:hover {
+  background-color: #ffda49;
+  color: black;
+}
+.carousels .carousel-layout .carousel-btn_icon {
+  padding: 0px 20px;
+}
+.carousels .carousel-bg {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  z-index: -3;
+}

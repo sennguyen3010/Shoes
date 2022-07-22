@@ -4,4 +4,13 @@
   color: $c;
 }
 
-
+@mixin button($fz, $fw, $c, $p, $bg, $bg-hover, $c-hover, $tr) {
+  @include text($fz, $fw, $c);
+  padding: $p;
+  background-color: $bg;
+  transition: $tr;
+  &:hover {
+    background-color: $bg-hover;
+    color: $c-hover;
+  }
+}

@@ -1,0 +1,62 @@
+.carousels {
+  position: relative;
+  height: 530px;
+
+  .carousel-layout {
+    overflow-x: hidden;
+    .carousel-circle {
+      .carousel-circle-item {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        background-color: $text-c2-light;
+        margin-right: 20px;
+      }
+
+      .active {
+        background-color: $bg-c4-secondary;
+      }
+    }
+
+    .carousel-item_card {
+      height: 530px;
+      .carousel-content {
+        right: 0;
+        h5 {
+          @include text($text-4xl, $text-light, $text-c1-dark);
+        }
+        p {
+          @include text($text-xl, $text-light, $text-c1-dark);
+        }
+
+        .carousel-button {
+          margin: 40px 0;
+
+          .carousel-btn_buy {
+            text-align: center;
+            @include button(
+              $text-xl,
+              $text-light,
+              $text-c2-light,
+              14px 30px,
+              $bg-c4-secondary,
+              $bg-c5-secondary,
+              black,
+              all 0.3s
+            );
+          }
+        }
+      }
+    }
+    .carousel-btn_icon {
+      padding: 0px 20px;
+    }
+  }
+  .carousel-bg {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    z-index: -3;
+  }
+}
