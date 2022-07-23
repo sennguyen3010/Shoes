@@ -18,7 +18,7 @@
         border-radius: 0;
         font-size: $text-xl;
         &:focus-visible {
-          //   outline: none;
+          outline: none;
         }
         &::placeholder {
           @include text($text-3xl, $text-light, $text-c1-dark);
