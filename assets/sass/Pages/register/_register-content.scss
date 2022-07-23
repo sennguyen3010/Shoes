@@ -1,0 +1,95 @@
+.register {
+  margin-top: 200px;
+  #registerForm {
+    .register-title {
+      @include text($text-4xl, $text-regular, $text-c1-dark);
+      text-align: center;
+      padding-bottom: 60px;
+    }
+    .register-item {
+      margin-top: 30px;
+      position: relative;
+
+      &_input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 5px solid $bg-c3-secondary;
+        border-radius: 0;
+        font-size: $text-xl;
+        &:focus-visible {
+          //   outline: none;
+        }
+        &::placeholder {
+          @include text($text-3xl, $text-light, $text-c1-dark);
+        }
+      }
+      .register-forced {
+        @include text($text-xl, $text-regular, $text-c1-red);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0 45px 15px 0;
+      }
+      .right {
+        padding-right: 8px;
+      }
+      .pd-bt {
+        bottom: 8px;
+      }
+    }
+    .pd-right {
+      padding-right: 45px;
+    }
+    .pd-left {
+      padding-left: 45px;
+    }
+    .register-gender {
+      display: flex;
+      margin-top: 30px;
+      @include text($text-3xl, $text-light, $text-c1-dark);
+      .register-check {
+        display: flex;
+        align-items: center;
+        input {
+          background-color: $bg-c4-primary;
+          border: none;
+          width: 65px;
+          height: 50px;
+          margin-right: 10px;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+          &:checked {
+            background-color: $bg-c4-primary;
+            border: 2px solid $bg-c3-secondary;
+          }
+          &:checked[type='radio'] {
+            background-image: url('../assets/img/Ellipse 2.png');
+            background-size: 40px;
+          }
+        }
+      }
+    }
+    .btnSubmit {
+      @include text($text-3xl, $text-regular, $text-c3-light);
+      background-color: $bg-c3-secondary;
+      border-radius: 0;
+      padding: 8px 120px;
+      margin-top: 120px;
+      border: none;
+      transition: all 0.2s;
+      border-radius: 5px;
+      &:hover {
+        background-color: #8c15b5;
+      }
+      &:focus {
+        // box-shadow: 1px 1px 22px 1px rgba(#ae18e2, 0.31);
+        // border: 2px solid red;
+        box-shadow: 0 0 0 0.25rem rgba(#ae18e2, 0.5);
+        background-color: #8c15b5;
+      }
+    }
+  }
+}
