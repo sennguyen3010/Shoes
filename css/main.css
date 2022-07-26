@@ -140,8 +140,12 @@ a {
   color: #000000;
 }
 .productFeature .productFeature-item {
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  width: 100%;
+  min-height: 450px;
   transition: all 300ms ease-in-out;
 }
 .productFeature .productFeature-item:hover {
@@ -156,7 +160,8 @@ a {
   justify-content: center;
 }
 .productFeature .productFeature-item .productFeature-item-top .productFeature-item-img img {
-  padding: 50px;
+  padding: 0 50px;
+  width: 100%;
 }
 .productFeature .productFeature-item .productFeature-item-top h4 {
   font-size: 24px;
@@ -170,26 +175,26 @@ a {
 }
 .productFeature .productFeature-item .productFeature-item-bottom {
   display: flex;
+  justify-content: center;
 }
 .productFeature .productFeature-item .productFeature-item-bottom .item-bottom-text {
-  text-align: center;
-}
-.productFeature .productFeature-item .productFeature-item-bottom .item-bottom-text a {
+  border: none;
   padding: 20px 40px;
-}
-.productFeature .productFeature-item .productFeature-item-bottom a {
+  display: block;
   font-size: 24px;
   font-weight: 200;
   color: #000000;
   padding: 14px 0px;
   background-color: #e1b067;
   transition: all 0.3s;
-  cursor: pointer;
-  display: block;
+  width: 100%;
 }
-.productFeature .productFeature-item .productFeature-item-bottom a:hover {
+.productFeature .productFeature-item .productFeature-item-bottom .item-bottom-text:hover {
   background-color: #f8b653;
   color: #ffffff;
+}
+.productFeature .productFeature-item .productFeature-item-bottom .productFeature-btn {
+  text-align: center;
 }
 .productFeature .productFeature-item .productFeature-item-bottom .productFeature-price {
   background-color: #dedddc;
@@ -198,6 +203,9 @@ a {
 .productFeature .productFeature-item .productFeature-item-bottom .productFeature-price:hover {
   background-color: #dedddc;
   color: #000000;
+}
+.productFeature .productFeature-item .bottom-bg-grey {
+  background-color: #dedddc;
 }
 
 .footer {

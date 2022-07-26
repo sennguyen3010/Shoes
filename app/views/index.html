@@ -238,61 +238,9 @@
         <div class="productFeature-layout">
           <h2 class="productFeature-title">-Product Feature-</h2>
           <div class="row gy-4 productFeature-group">
-            <!-- item1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="productFeature-item">
-                <div class="productFeature-item-top">
-                  <div class="productFeature-item-img">
-                    <img src="../../assets/img/image 5.png" alt="" />
-                  </div>
-                  <h4>Adidas Prophere</h4>
-                  <p>Short Descript...</p>
-                </div>
-                <div class="productFeature-item-bottom row">
-                  <div class="col-6 pe-0">
-                    <a class="productFeature-btn item-bottom-text" href="#"
-                      >Buy now</a
-                    >
-                  </div>
-
-                  <div class="col-6 ps-0">
-                    <a class="productFeature-price item-bottom-text" href="#"
-                      >85$</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- item2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="productFeature-item">
-                <div class="productFeature-item-top">
-                  <div class="productFeature-item-img">
-                    <img src="../../assets/img/image 5.png" alt="" />
-                  </div>
-                  <h4>Adidas Prophere</h4>
-                  <p>Short Descript...</p>
-                </div>
-                <div class="productFeature-item-bottom row">
-                  <div class="col-6 pe-0">
-                    <a class="productFeature-btn item-bottom-text" href="#"
-                      >Buy now</a
-                    >
-                  </div>
-
-                  <div class="col-6 ps-0">
-                    <a class="productFeature-price item-bottom-text" href="#"
-                      >85$</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <!-- item3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="productFeature-item">
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+              <a href="#" class="productFeature-item">
                 <div class="productFeature-item-top">
                   <div class="productFeature-item-img">
                     <img src="../../assets/img/image 5.png" alt="" />
@@ -300,24 +248,28 @@
                   <h4>Adidas Prophere</h4>
                   <p>Short Descript...</p>
                 </div>
-                <div class="productFeature-item-bottom row">
+                <div class="row">
                   <div class="col-6 pe-0">
-                    <a class="productFeature-btn item-bottom-text" href="#"
-                      >Buy now</a
-                    >
+                    <div class="productFeature-item-bottom bottom-bg-yellow">
+                      <button class="productFeature-btn item-bottom-text">
+                        Buy now
+                      </button>
+                    </div>
                   </div>
 
                   <div class="col-6 ps-0">
-                    <a class="productFeature-price item-bottom-text" href="#"
-                      >85$</a
-                    >
+                    <div class="productFeature-item-bottom bottom-bg-grey">
+                      <button class="productFeature-price item-bottom-text">
+                        85$
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </a>
+            </div> -->
 
             <!-- item1 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <!-- <div class="col-12 col-md-6 col-lg-4">
               <div class="productFeature-item">
                 <div class="productFeature-item-top">
                   <div class="productFeature-item-img">
@@ -340,10 +292,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- item2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <!-- <div class="col-12 col-md-6 col-lg-4">
               <div class="productFeature-item">
                 <div class="productFeature-item-top">
                   <div class="productFeature-item-img">
@@ -366,10 +318,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- item3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <!-- <div class="col-12 col-md-6 col-lg-4">
               <div class="productFeature-item">
                 <div class="productFeature-item-top">
                   <div class="productFeature-item-img">
@@ -392,7 +344,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -522,6 +474,13 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- backtotop -->
     <script src="../controllers/backtotop/util.js"></script>
     <script src="../controllers/backtotop/backtotop.js"></script>
@@ -532,5 +491,8 @@
         header.classList.toggle('sticky', window.scrollY > 0);
       });
     </script>
+
+    <script src="../controllers/ajax.js"></script>
+    <script src="../controllers/index.js"></script>
   </body>
 </html>
