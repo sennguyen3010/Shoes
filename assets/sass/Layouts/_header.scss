@@ -66,3 +66,27 @@
   background-color: #fff;
   box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
 }
+
+//responsive
+@media (max-width: $bp-lg) {
+  .header {
+    .header-menu {
+      ul {
+        background-color: #fff;
+        margin-top: 20px;
+        li {
+          max-width: 80px;
+
+          &:hover a::after {
+          }
+          &:hover a {
+          }
+          a {
+            &::after {
+            }
+          }
+        }
+      }
+    }
+  }
+}

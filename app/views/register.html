@@ -34,7 +34,7 @@
       <!-- navbar -->
       <div class="header-nav">
         <nav class="navbar">
-          <div class="container-fluid">
+          <div class="container">
             <a class="navbar-brand header-left" href="#">
               <img src="../../assets/img/image 3.png" alt="" />
             </a>
@@ -46,7 +46,7 @@
                 <span class="header-right_cart_count">(1)</span>
               </a>
               <a class="header-right_text" id="login" href="#"> Login </a>
-              <a class="header-right_text" href="#">Register</a>
+              <a class="header-right_text" href="./register.html">Register</a>
             </div>
           </div>
         </nav>
@@ -55,7 +55,7 @@
       <!-- menu -->
       <div class="header-menu">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button
               class="navbar-toggler"
@@ -71,7 +71,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
                     >Home</a
                   >
                 </li>
@@ -97,19 +100,19 @@
     <!-- register content -->
     <section class="register">
       <div class="container">
-        <form class="row g-3" id="registerForm">
+        <form class="row" id="registerForm">
           <h2 class="register-title">Register</h2>
-          <div class="col-md-6 register-item pd-right">
+          <div class="col-12 col-lg-6 register-item pd-right">
             <input class="register-item_input" id="email" placeholder="Email" />
             <p class="register-forced">(*)</p>
           </div>
 
-          <div class="col-md-6 register-item pd-left">
+          <div class="col-12 col-lg-6 register-item pd-left">
             <input class="register-item_input" id="name" placeholder="Name" />
             <p class="register-forced right">(*)</p>
           </div>
 
-          <div class="col-md-6 register-item pd-right">
+          <div class="col-12 col-lg-6 register-item pd-right">
             <input
               class="register-item_input"
               id="password"
@@ -118,12 +121,12 @@
             <p class="register-forced">(*)</p>
           </div>
 
-          <div class="col-md-6 register-item pd-left">
+          <div class="col-12 col-lg-6 register-item pd-left">
             <input class="register-item_input" id="phone" placeholder="Phone" />
             <p class="register-forced right">(*)</p>
           </div>
 
-          <div class="col-md-6 register-item pd-right">
+          <div class="col-12 col-lg-6 register-item pd-right">
             <input
               class="register-item_input"
               id="passwordConfirm"
@@ -134,39 +137,40 @@
 
           <!-- gender checkbox -->
 
-          <fieldset class="col-md-6 pd-left register-gender" id="gender">
-            <legend class="col-form-label col-sm-4">Gender</legend>
-            <div class="col-sm-4">
-              <div class="form-check register-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="gridRadios"
-                  id="male"
-                  value="true"
-                  checked
-                />
-                <label class="form-check-label" for="male"> Male </label>
-              </div>
+          <fieldset class="col-12 col-lg-6 pd-left register-gender" id="gender">
+            <!-- <legend class="col-form-label">Gender</legend> -->
+            <p>Gender</p>
+            <!-- <div class=""> -->
+            <div class="form-check register-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="male"
+                value="true"
+                checked
+              />
+              <label class="form-check-label" for="male"> Male </label>
             </div>
+            <!-- </div> -->
 
-            <div class="col-sm-4">
-              <div class="form-check register-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="gridRadios"
-                  id="female"
-                  value="false"
-                />
-                <label class="form-check-label" for="female"> Female </label>
-              </div>
+            <!-- <div class=""> -->
+            <div class="form-check register-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="female"
+                value="false"
+              />
+              <label class="form-check-label" for="female"> Female </label>
             </div>
+            <!-- </div> -->
           </fieldset>
 
-          <div class="col-md-6 pd-right"></div>
+          <div class="col-0 col-lg-6 pd-right"></div>
 
-          <div class="col-md-6 pd-left">
+          <div class="col-12 col-lg-6 pd-left register-btnSubmit">
             <button type="submit" class="btnSubmit">Submit</button>
           </div>
         </form>
@@ -178,7 +182,7 @@
       <div class="footer-group">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item footer-bd">
                 <h2>GET HELP</h2>
                 <ul>
@@ -190,7 +194,7 @@
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item footer-bd">
                 <h2>ORDERS</h2>
                 <ul>
@@ -201,7 +205,7 @@
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item">
                 <h2>REGISTER</h2>
                 <ul>
@@ -226,7 +230,7 @@
       <div class="footer-group footer-bottom">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item footer-bd">
                 <h2>EMAIL SIGN UP</h2>
                 <ul>
@@ -243,7 +247,7 @@
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item footer-bd">
                 <h2>GIFT CARDS</h2>
                 <ul>
@@ -255,7 +259,7 @@
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <div class="footer-item">
                 <h2>SOTRES NEAR YOU</h2>
                 <ul>
