@@ -5,11 +5,13 @@
 //Base
 @import './Base/reset';
 //components
+@import './Components/backtotop';
 //Layouts
 @import './Layouts/header';
 @import './Layouts/product-feature';
 @import './Layouts/footer';
 //Pages
 @import './Pages/home/carousel';
+@import './Pages/register/register-content';
+@import './Pages/detail/product-detail'
 //Theme
-
