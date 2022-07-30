@@ -24,7 +24,7 @@ function renderProduct(arrProduct) {
     if (index < 6) {
       html += `
       <div class="col-12 col-md-6 col-lg-4">
-      <a href="#" class="productFeature-item">
+      <a href="../views/detail.html?product=${item.id}" class="productFeature-item">
         <div class="productFeature-item-top">
           <div class="productFeature-item-img">
             <img src="${item.image}" alt="" />
