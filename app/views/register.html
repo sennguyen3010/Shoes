@@ -1,314 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Register</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <title>Register</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="../../css/main.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header fixed-top">
-      <!-- navbar -->
-      <div class="header-nav">
-        <nav class="navbar">
-          <div class="container">
-            <a class="navbar-brand header-left" href="#">
-              <img src="../../assets/img/image 3.png" alt="" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header fixed-top">
+    <!-- navbar -->
+    <div class="header-nav">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand header-left" href="#">
+            <img src="../../assets/img/image 3.png" alt="" />
+          </a>
+
+          <div class="header-right">
+            <a class="header-right_cart" href="#">
+              <!-- <img src="../../assets/img/image 8.png" alt="" /> -->
+              <i class="fa-solid fa-cart-arrow-down"></i>
+              <span class="header-right_cart_count">(1)</span>
             </a>
+            <a class="header-right_text" id="login" href="#"> Login </a>
+            <a class="header-right_text" href="./register.html">Register</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-            <div class="header-right">
-              <a class="header-right_cart" href="#">
-                <!-- <img src="../../assets/img/image 8.png" alt="" /> -->
-                <i class="fa-solid fa-cart-arrow-down"></i>
-                <span class="header-right_cart_count">(1)</span>
-              </a>
-              <a class="header-right_text" id="login" href="#"> Login </a>
-              <a class="header-right_text" href="./register.html">Register</a>
+    <!-- menu -->
+    <div class="header-menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sport</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- register content -->
+  <section class="register">
+    <div class="container">
+      <form class="row" id="registerForm">
+        <h2 class="register-title">Register</h2>
+        <div class="col-12 col-lg-6 register-item pd-right">
+          <input class="register-item_input" id="email" placeholder="Email" />
+          <p class="register-forced">(*)</p>
+        </div>
+
+        <div class="col-12 col-lg-6 register-item pd-left">
+          <input class="register-item_input" id="name" placeholder="Name" />
+          <p class="register-forced right">(*)</p>
+        </div>
+
+        <div class="col-12 col-lg-6 register-item pd-right">
+          <input class="register-item_input" id="password" placeholder="Password" />
+          <p class="register-forced">(*)</p>
+        </div>
+
+        <div class="col-12 col-lg-6 register-item pd-left">
+          <input class="register-item_input" id="phone" placeholder="Phone" />
+          <p class="register-forced right">(*)</p>
+        </div>
+
+        <div class="col-12 col-lg-6 register-item pd-right">
+          <input class="register-item_input" id="passwordConfirm" placeholder="Password Confirm" />
+          <p class="register-forced pd-bt">(*)</p>
+        </div>
+
+        <!-- gender checkbox -->
+
+        <fieldset class="col-12 col-lg-6 pd-left register-gender" id="gender">
+          <!-- <legend class="col-form-label">Gender</legend> -->
+          <p>Gender</p>
+          <!-- <div class=""> -->
+          <div class="form-check register-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="male" value="true" checked />
+            <label class="form-check-label" for="male"> Male </label>
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class=""> -->
+          <div class="form-check register-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="female" value="false" />
+            <label class="form-check-label" for="female"> Female </label>
+          </div>
+          <!-- </div> -->
+        </fieldset>
+
+        <div class="col-0 col-lg-6 pd-right"></div>
+
+        <div class="col-12 col-lg-6 pd-left register-btnSubmit">
+          <button type="submit" class="btnSubmit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-group">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item footer-bd">
+              <h2>GET HELP</h2>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">NIKEiD</a></li>
+                <li><a href="#">Nike+</a></li>
+              </ul>
             </div>
           </div>
-        </nav>
-      </div>
 
-      <!-- menu -->
-      <div class="header-menu">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Home</a
-                  >
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item footer-bd">
+              <h2>ORDERS</h2>
+              <ul>
+                <li><a href="#">Payment options</a></li>
+                <li><a href="#">Shipping and delivery</a></li>
+                <li><a href="#">Returns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item">
+              <h2>REGISTER</h2>
+              <ul>
+                <li>
+                  <a href="#">Create one account to manage everthing you do with Nike,
+                    from your shopping preferences to your Nike+ activity.</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Men</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Women</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Kid</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sport</a>
+                <li>
+                  <a class="footer-item-text-red" href="#">Learn more</a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
+          <!--  -->
+        </div>
       </div>
-    </header>
+    </div>
 
-    <!-- register content -->
-    <section class="register">
+    <!-- footer-bottom -->
+    <div class="footer-group footer-bottom">
       <div class="container">
-        <form class="row" id="registerForm">
-          <h2 class="register-title">Register</h2>
-          <div class="col-12 col-lg-6 register-item pd-right">
-            <input class="register-item_input" id="email" placeholder="Email" />
-            <p class="register-forced">(*)</p>
-          </div>
-
-          <div class="col-12 col-lg-6 register-item pd-left">
-            <input class="register-item_input" id="name" placeholder="Name" />
-            <p class="register-forced right">(*)</p>
-          </div>
-
-          <div class="col-12 col-lg-6 register-item pd-right">
-            <input
-              class="register-item_input"
-              id="password"
-              placeholder="Password"
-            />
-            <p class="register-forced">(*)</p>
-          </div>
-
-          <div class="col-12 col-lg-6 register-item pd-left">
-            <input class="register-item_input" id="phone" placeholder="Phone" />
-            <p class="register-forced right">(*)</p>
-          </div>
-
-          <div class="col-12 col-lg-6 register-item pd-right">
-            <input
-              class="register-item_input"
-              id="passwordConfirm"
-              placeholder="Password Confirm"
-            />
-            <p class="register-forced pd-bt">(*)</p>
-          </div>
-
-          <!-- gender checkbox -->
-
-          <fieldset class="col-12 col-lg-6 pd-left register-gender" id="gender">
-            <!-- <legend class="col-form-label">Gender</legend> -->
-            <p>Gender</p>
-            <!-- <div class=""> -->
-            <div class="form-check register-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="male"
-                value="true"
-                checked
-              />
-              <label class="form-check-label" for="male"> Male </label>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item footer-bd">
+              <h2>EMAIL SIGN UP</h2>
+              <ul>
+                <li>
+                  <a href="#">Be the first to knnow about new products and special
+                    offers.</a>
+                </li>
+                <li>
+                  <a class="footer-item-text-red" href="#">Sign up now</a>
+                </li>
+              </ul>
             </div>
-            <!-- </div> -->
-
-            <!-- <div class=""> -->
-            <div class="form-check register-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="female"
-                value="false"
-              />
-              <label class="form-check-label" for="female"> Female </label>
-            </div>
-            <!-- </div> -->
-          </fieldset>
-
-          <div class="col-0 col-lg-6 pd-right"></div>
-
-          <div class="col-12 col-lg-6 pd-left register-btnSubmit">
-            <button type="submit" class="btnSubmit">Submit</button>
           </div>
-        </form>
-      </div>
-    </section>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer-group">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item footer-bd">
-                <h2>GET HELP</h2>
-                <ul>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Shopping</a></li>
-                  <li><a href="#">NIKEiD</a></li>
-                  <li><a href="#">Nike+</a></li>
-                </ul>
-              </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item footer-bd">
+              <h2>GIFT CARDS</h2>
+              <ul>
+                <li><a href="#">Give the gift that always fits.</a></li>
+                <li>
+                  <a class="footer-item-text-red" href="#">View cards</a>
+                </li>
+              </ul>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item footer-bd">
-                <h2>ORDERS</h2>
-                <ul>
-                  <li><a href="#">Payment options</a></li>
-                  <li><a href="#">Shipping and delivery</a></li>
-                  <li><a href="#">Returns</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item">
-                <h2>REGISTER</h2>
-                <ul>
-                  <li>
-                    <a href="#"
-                      >Create one account to manage everthing you do with Nike,
-                      from your shopping preferences to your Nike+ activity.</a
-                    >
-                  </li>
-                  <li>
-                    <a class="footer-item-text-red" href="#">Learn more</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--  -->
           </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-item">
+              <h2>SOTRES NEAR YOU</h2>
+              <ul>
+                <li>
+                  <a href="#">Locate a Nike retail store or authorized retailer.</a>
+                </li>
+                <li>
+                  <a class="footer-item-text-red" href="#">Search</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--  -->
         </div>
       </div>
+    </div>
+  </footer>
+  <a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-      <!-- footer-bottom -->
-      <div class="footer-group footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item footer-bd">
-                <h2>EMAIL SIGN UP</h2>
-                <ul>
-                  <li>
-                    <a href="#"
-                      >Be the first to knnow about new products and special
-                      offers.</a
-                    >
-                  </li>
-                  <li>
-                    <a class="footer-item-text-red" href="#">Sign up now</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+  <!-- backtotop -->
+  <script src="../controllers/backtotop/util.js"></script>
+  <script src="../controllers/backtotop/backtotop.js"></script>
+  <!-- Navbarscroll -->
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+  </script>
+</body>
 
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item footer-bd">
-                <h2>GIFT CARDS</h2>
-                <ul>
-                  <li><a href="#">Give the gift that always fits.</a></li>
-                  <li>
-                    <a class="footer-item-text-red" href="#">View cards</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="footer-item">
-                <h2>SOTRES NEAR YOU</h2>
-                <ul>
-                  <li>
-                    <a href="#"
-                      >Locate a Nike retail store or authorized retailer.</a
-                    >
-                  </li>
-                  <li>
-                    <a class="footer-item-text-red" href="#">Search</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-      </div>
-    </footer>
-    <a href="#" class="backToTop cd-top text-replace js-cd-top">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-      crossorigin="anonymous"
-    ></script>
-    <!-- backtotop -->
-    <script src="../controllers/backtotop/util.js"></script>
-    <script src="../controllers/backtotop/backtotop.js"></script>
-    <!-- Navbarscroll -->
-    <script type="text/javascript">
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-      });
-    </script>
-  </body>
 </html>
