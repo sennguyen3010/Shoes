@@ -6,6 +6,7 @@ function getProductApi() {
   });
   promise.then(function (result) {
     renderProduct(result.data.content);
+    // console.log(result.data.content);
   });
   promise.catch(function (err) {
     console.log(err);

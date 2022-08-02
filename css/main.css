@@ -604,12 +604,16 @@ a {
   padding-top: 109px;
   background-color: #F8F8F8;
 }
+.product-detail .container .product-detail__layout .product-detail__img .bg-product img {
+  width: 220px;
+  height: 156px;
+}
 .product-detail .container .product-detail__layout .product-detail__content {
   padding-left: 128px;
   padding-top: 67px;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product__name {
-  width: 196px;
+  width: 100%;
   height: 36px;
   font-style: normal;
   font-weight: 300;
@@ -677,16 +681,16 @@ a {
   font-size: 30px;
   line-height: 36px;
   color: #FFFCFC;
-  margin-right: 20px;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product-amount .product-amount__selected {
-  margin-right: 25px;
-  width: 14px;
+  width: 59px;
   height: 36px;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
+  display: inline-block;
+  text-align: center;
   color: #000000;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product-amount .product-amount__minus {
