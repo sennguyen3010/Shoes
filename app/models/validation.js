@@ -1,4 +1,4 @@
-function Validation() {
+export function Validation() {
     this.kiemTraRong = function (value, selectorError) {
         if (value.trim() === '') {
             document.querySelector(selectorError).innerHTML = 'Không được bỏ trống !';
