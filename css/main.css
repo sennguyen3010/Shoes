@@ -586,7 +586,6 @@ a {
 }
 .product-detail {
   position: relative;
-  height: 530px;
   margin-top: 100px;
 }
 .product-detail .container .product-detail__layout {
@@ -601,12 +600,12 @@ a {
   height: 355px;
   width: 334px;
   padding-left: 57px;
-  padding-top: 109px;
+  padding-top: 50px;
   background-color: #F8F8F8;
 }
 .product-detail .container .product-detail__layout .product-detail__img .bg-product img {
   width: 220px;
-  height: 156px;
+  height: 250px;
 }
 .product-detail .container .product-detail__layout .product-detail__content {
   padding-left: 128px;
@@ -655,6 +654,7 @@ a {
   font-size: 24px;
   line-height: 29px;
   color: #1E1D1D;
+  border-radius: 0.375rem;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product__size-selection li button {
   height: 100%;

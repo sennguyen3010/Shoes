@@ -31,13 +31,13 @@ function getProductByID() {
 
 function renderProductByID(pro) {
     let html = `
-    <div class="product-detail__img">
+    <div class="product-detail__img col-xl-4">
     <div class="bg-product">
         <img src="${pro.image}" alt="">
     </div>
 
 </div>
-<div class="product-detail__content">
+<div class="product-detail__content col-xl-6">
     <h3 class="product__name">
         ${pro.name}
     </h3>
