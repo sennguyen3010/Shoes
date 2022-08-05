@@ -33,7 +33,6 @@ document.querySelector('#btnSubmit').onclick = function () {
         //Xử lý thành công 
         promise.then(function (result) {
             console.log('result', result.data.content);
-            //gọi lại api load lại table
         });
 
 
