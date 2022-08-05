@@ -88,6 +88,6 @@ window.kiemTraConfirmPassword = function (password, confirmPassword, selectorErr
         document.querySelector(selectorError).innerHTML = '(*)';
         return true;
     }
-    document.querySelector(selectorError).innerHTML = 'Xác nhận mật khẩu không đúng';
+    document.querySelector(selectorError).innerHTML = 'Xác nhận không đúng';
     return false;
 }
