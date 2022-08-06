@@ -1,32 +1,29 @@
 window.onload = function () {
-    getProductByID();
-
-}
+  getProductByID();
+};
 
 function getProductByID() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get('product');
-    console.log(myParam);
-    let pro = {};
-    const promise = axios({
-        url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${myParam}`,
-        method: 'GET',
-        ResponseType: JSON,
-    });
-    promise.then(function (result) {
-        pro = { ...result.data.content };
-        renderProductByID(pro);
-        renderProduct(pro.relatedProducts);
-
-    });
-    promise.catch(function (err) {
-        console.log(err);
-    });
-
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('product');
+  console.log(myParam);
+  let pro = {};
+  const promise = axios({
+    url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${myParam}`,
+    method: 'GET',
+    ResponseType: JSON,
+  });
+  promise.then(function (result) {
+    pro = { ...result.data.content };
+    renderProductByID(pro);
+    renderProduct(pro.relatedProducts);
+  });
+  promise.catch(function (err) {
+    console.log(err);
+  });
 }
 
 function renderProductByID(pro) {
-    let html = `
+  let html = `
     <div class="product-detail__img col-xl-4">
     <div class="bg-product">
         <img src="${pro.image}" alt="">
@@ -78,18 +75,17 @@ function renderProductByID(pro) {
 </div>
 `;
 
-    document.querySelector('.product-detail__layout').innerHTML = html;
-
+  document.querySelector('.product-detail__layout').innerHTML = html;
 }
 
 function renderProduct(arrProduct) {
-    let html = '';
+  let html = '';
 
-    arrProduct.map((item, index) => {
-        if (index < 6) {
-            html += `
+  arrProduct.map((item, index) => {
+    if (index < 6) {
+      html += `
         <div class="col-12 col-md-6 col-lg-4">
-        <a href="../views/detail.html?product=${item.id}" class="productFeature-item">
+        <a href="../detail.html?product=${item.id}" class="productFeature-item">
           <div class="productFeature-item-top">
             <div class="productFeature-item-img">
               <img src="${item.image}" alt="" />
@@ -117,22 +113,25 @@ function renderProduct(arrProduct) {
         </a>
       </div>
               `;
-        }
-    });
-    document.querySelector('.productFeature-group').innerHTML = html;
+    }
+  });
+  document.querySelector('.productFeature-group').innerHTML = html;
 }
 
 window.plus = () => {
-    let amuont = Number(document.querySelector('.product-amount__selected').innerHTML);
-    amuont++;
-    document.querySelector('.product-amount__selected').innerHTML = amuont;
-}
+  let amuont = Number(
+    document.querySelector('.product-amount__selected').innerHTML
+  );
+  amuont++;
+  document.querySelector('.product-amount__selected').innerHTML = amuont;
+};
 
 window.minus = () => {
-    let amuont = Number(document.querySelector('.product-amount__selected').innerHTML);
-    if (amuont > 1) {
-        amuont--;
-        document.querySelector('.product-amount__selected').innerHTML = amuont;
-    }
-
-}
+  let amuont = Number(
+    document.querySelector('.product-amount__selected').innerHTML
+  );
+  if (amuont > 1) {
+    amuont--;
+    document.querySelector('.product-amount__selected').innerHTML = amuont;
+  }
+};

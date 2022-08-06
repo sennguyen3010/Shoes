@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header fixed-top">
+      <!-- navbar -->
+      <div class="header-nav">
+        <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand header-left" href="#">
+              <img src="../../assets/img/image 3.png" alt="" />
+            </a>
+
+            <div class="header-right">
+              <a class="header-right_cart" href="#">
+                <!-- <img src="../../assets/img/image 8.png" alt="" /> -->
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <span class="header-right_cart_count">(1)</span>
+              </a>
+              <a class="header-right_text" id="login" href="#"> Login </a>
+              <a class="header-right_text" href="./register.html">Register</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- menu -->
+      <div class="header-menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kid</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sport</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- carousel -->
+    <section class="carousels">
+      <div class="carousel-layout container">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators carousel-circle">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active carousel-circle-item"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              class="carousel-circle-item"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              class="carousel-circle-item"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner carousel-layout-pd">
+            <div class="carousel-overflow overflow-hidden">
+              <!-- item1 -->
+              <div class="carousel-item">
+                <div
+                  class="carousel-item_card row align-items-center justify-content-center"
+                >
+                  <div class="col-12 col-lg-9">
+                    <img
+                      src="../../assets/img/image 4.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-content col-12 col-lg-3">
+                    <div>
+                      <h5>Product name</h5>
+                      <p>Product description ...</p>
+                      <div class="carousel-button">
+                        <a class="carousel-btn_buy" href="#">Buy now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item2 -->
+              <div class="carousel-item">
+                <div
+                  class="carousel-item_card row align-items-center justify-content-center"
+                >
+                  <div class="col-12 col-lg-9">
+                    <img
+                      src="../../assets/img/image 4.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-content col-12 col-lg-3">
+                    <div>
+                      <h5>Product name</h5>
+                      <p>Product description ...</p>
+                      <div class="carousel-button">
+                        <a class="carousel-btn_buy" href="#">Buy now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item3 -->
+              <div class="carousel-item active">
+                <div
+                  class="carousel-item_card row align-items-center justify-content-center"
+                >
+                  <div class="col-12 col-lg-9">
+                    <img
+                      src="../../assets/img/image 4.png"
+                      class="d-block"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-content col-12 col-lg-3">
+                    <div>
+                      <h5>Product name</h5>
+                      <p>Product description ...</p>
+                      <div class="carousel-button">
+                        <a class="carousel-btn_buy" href="#">Buy now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start carousel-btn-pre"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-btn_icon" aria-hidden="true">
+              <img src="../../assets/img/Polygon 2.png" alt="" />
+            </span>
+
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end carousel-btn-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-btn_icon" aria-hidden="true">
+              <img src="../../assets/img/Polygon 1.png" alt="" />
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <img class="carousel-bg" src="../../assets/img/image 6.png" alt="" />
+    </section>
+
+    <!-- product feature -->
+    <section class="productFeature">
+      <div class="container">
+        <div class="productFeature-layout">
+          <h2 class="productFeature-title">-Product Feature-</h2>
+          <div class="row gy-4 productFeature-group"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-group">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>GET HELP</h2>
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Shopping</a></li>
+                  <li><a href="#">NIKEiD</a></li>
+                  <li><a href="#">Nike+</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>ORDERS</h2>
+                <ul>
+                  <li><a href="#">Payment options</a></li>
+                  <li><a href="#">Shipping and delivery</a></li>
+                  <li><a href="#">Returns</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item">
+                <h2>REGISTER</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Create one account to manage everthing you do with Nike,
+                      from your shopping preferences to your Nike+ activity.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Learn more</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-bottom -->
+      <div class="footer-group footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>EMAIL SIGN UP</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Be the first to knnow about new products and special
+                      offers.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Sign up now</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>GIFT CARDS</h2>
+                <ul>
+                  <li><a href="#">Give the gift that always fits.</a></li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">View cards</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item">
+                <h2>SOTRES NEAR YOU</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Locate a Nike retail store or authorized retailer.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Search</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- backtotop -->
+    <script src="./app/controllers/backtotop/util.js"></script>
+    <script src="./app/controllers/backtotop/backtotop.js"></script>
+    <!-- Navbarscroll -->
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+
+    <script src="./app/controllers/ajax.js"></script>
+    <script src="./app/controllers/index.js"></script>
+  </body>
+</html>

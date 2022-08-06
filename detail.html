@@ -26,8 +26,9 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <!-- header -->
     <header class="header fixed-top">
@@ -97,146 +98,70 @@
       </div>
     </header>
 
-    <!-- carousel -->
-    <section class="carousels">
-      <div class="carousel-layout container">
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators carousel-circle">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active carousel-circle-item"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              class="carousel-circle-item"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              class="carousel-circle-item"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner carousel-layout-pd">
-            <div class="carousel-overflow overflow-hidden">
-              <!-- item1 -->
-              <div class="carousel-item">
-                <div
-                  class="carousel-item_card row align-items-center justify-content-center"
-                >
-                  <div class="col-12 col-lg-9">
-                    <img
-                      src="../../assets/img/image 4.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-content col-12 col-lg-3">
-                    <div>
-                      <h5>Product name</h5>
-                      <p>Product description ...</p>
-                      <div class="carousel-button">
-                        <a class="carousel-btn_buy" href="#">Buy now</a>
-                      </div>
+    <!-- Product detail -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="product-detail__layout row">
+          <!-- <div class="product-detail__img">
+                    <div class="bg-product">
+                        <img src="../../assets/img/image 5.png" alt="">
                     </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- item2 -->
-              <div class="carousel-item">
-                <div
-                  class="carousel-item_card row align-items-center justify-content-center"
-                >
-                  <div class="col-12 col-lg-9">
-                    <img
-                      src="../../assets/img/image 4.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-content col-12 col-lg-3">
-                    <div>
-                      <h5>Product name</h5>
-                      <p>Product description ...</p>
-                      <div class="carousel-button">
-                        <a class="carousel-btn_buy" href="#">Buy now</a>
-                      </div>
+                </div>
+                <div class="product-detail__content">
+                    <h3 class="product__name">
+                        Product name
+                    </h3>
+                    <p class="product__info">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur sequi esse ducimus
+                        veritatis aspernatur totam inventore, tempore rem impedit illum qui a quae aperiam officiis,
+                        error repellat sunt nulla! ( Thuộc tính Description)
+                    </p>
+                    <p class="available-size">
+                        Available size
+                    </p>
+                    <ul class="product__size-selection btn-group" role="group" aria-label="Basic example">
+                        <li>
+                            <button type="button" class="btn">38</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn">39</button>
+
+                        </li>
+                        <li>
+                            <button type="button" class="btn">40</button>
+
+                        </li>
+                        <li>
+                            <button type="button" class="btn">41</button>
+
+                        </li>
+                        <li>
+                            <button type="button" class="btn">42</button>
+
+                        </li>
+                    </ul>
+                    <p class="product__price">
+                        85$
+                    </p>
+                    <div class="product-amount">
+                        <button class="product-amount__plus">+</button>
+                        <span class="product-amount__selected">1</span>
+                        <button class="product-amount__minus">-</button>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- item3 -->
-              <div class="carousel-item active">
-                <div
-                  class="carousel-item_card row align-items-center justify-content-center"
-                >
-                  <div class="col-12 col-lg-9">
-                    <img
-                      src="../../assets/img/image 4.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-content col-12 col-lg-3">
-                    <div>
-                      <h5>Product name</h5>
-                      <p>Product description ...</p>
-                      <div class="carousel-button">
-                        <a class="carousel-btn_buy" href="#">Buy now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev justify-content-start carousel-btn-pre"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-btn_icon" aria-hidden="true">
-              <img src="../../assets/img/Polygon 2.png" alt="" />
-            </span>
-
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next justify-content-end carousel-btn-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-btn_icon" aria-hidden="true">
-              <img src="../../assets/img/Polygon 1.png" alt="" />
-            </span>
-            <span class="visually-hidden">Next</span>
-          </button>
+                    <button class="btnProductAdd">
+                        Add to cart
+                    </button>
+                </div> -->
         </div>
       </div>
-      <img class="carousel-bg" src="../../assets/img/image 6.png" alt="" />
     </section>
 
     <!-- product feature -->
     <section class="productFeature">
       <div class="container">
         <div class="productFeature-layout">
-          <h2 class="productFeature-title">-Product Feature-</h2>
+          <h2 class="productFeature-title">-Realate Product-</h2>
           <div class="row gy-4 productFeature-group">
             <!-- item3 -->
             <!-- <div class="col-12 col-md-6 col-lg-4">
@@ -482,8 +407,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- backtotop -->
-    <script src="../controllers/backtotop/util.js"></script>
-    <script src="../controllers/backtotop/backtotop.js"></script>
+    <script src="./app/controllers/backtotop/util.js"></script>
+    <script src="./app/controllers/backtotop/backtotop.js"></script>
     <!-- Navbarscroll -->
     <script type="text/javascript">
       window.addEventListener('scroll', function () {
@@ -492,7 +417,7 @@
       });
     </script>
 
-    <script src="../controllers/ajax.js"></script>
-    <script src="../controllers/index.js"></script>
+    <!-- <script src="../controllers/ajax.js"></script> -->
+    <script type="module" src="./app/controllers/detail.js"></script>
   </body>
 </html>
