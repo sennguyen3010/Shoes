@@ -5,24 +5,26 @@
 
     .container {
         .product-detail__layout {
-            display: flex;
+            // display: flex;
 
             .product-detail__img {
-
+                // width: 100%;
+                height: 100%;
                 padding-left: 65px;
                 padding-top: 58px;
                 border-radius: 0px;
 
                 .bg-product {
-                    min-height: 355px;
+                    max-height: 355px;
                     max-width: 334px;
                     padding-left: 57px;
                     padding-top: 50px;
                     background-color: #F8F8F8;
 
                     img {
+                        width: 100%;
                         max-width: 220px;
-                        min-height: 250px;
+                        max-height: 250px;
                     }
 
                 }
@@ -69,6 +71,7 @@
 
                 .product__size-selection {
                     display: flex;
+                    flex-wrap: wrap;
                     padding-left: 0%;
 
                     li {

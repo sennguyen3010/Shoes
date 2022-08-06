@@ -14,13 +14,9 @@ function getProductByID() {
         ResponseType: JSON,
     });
     promise.then(function (result) {
-        // console.log(result.data.content);
         pro = { ...result.data.content };
-        console.log(pro);
-        // console.log('pro', pro.name);
         renderProductByID(pro);
         renderProduct(pro.relatedProducts);
-        console.log(pro.relatedProducts);
 
     });
     promise.catch(function (err) {
@@ -90,7 +86,6 @@ function renderProduct(arrProduct) {
     let html = '';
 
     arrProduct.map((item, index) => {
-        // console.log(item);
         if (index < 6) {
             html += `
         <div class="col-12 col-md-6 col-lg-4">

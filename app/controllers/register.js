@@ -15,13 +15,11 @@ document.querySelector('#btnSubmit').onclick = function () {
             let { id, value } = input;
             user[id] = value;
         }
-        console.log(arrInput)
 
         let checkBoxFemale = document.querySelector('#female');
         if (checkBoxFemale.checked) {
             user.gender = false;
         }
-        console.log(user);
 
         // gọi API
         var promise = axios({
