@@ -597,23 +597,23 @@ a {
   border-radius: 0px;
 }
 .product-detail .container .product-detail__layout .product-detail__img .bg-product {
-  height: 355px;
-  width: 334px;
+  max-height: 355px;
+  max-width: 334px;
   padding-left: 57px;
   padding-top: 50px;
   background-color: #F8F8F8;
 }
 .product-detail .container .product-detail__layout .product-detail__img .bg-product img {
-  width: 220px;
-  height: 250px;
+  max-width: 220px;
+  max-height: 250px;
 }
 .product-detail .container .product-detail__layout .product-detail__content {
   padding-left: 128px;
   padding-top: 67px;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product__name {
-  width: 100%;
-  height: 36px;
+  max-width: 100%;
+  max-height: 36px;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -622,8 +622,8 @@ a {
 }
 .product-detail .container .product-detail__layout .product-detail__content .product__info {
   margin-top: 9px;
-  width: 503px;
-  height: 90px;
+  max-width: 503px;
+  max-height: 90px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -631,8 +631,8 @@ a {
   color: #140101;
 }
 .product-detail .container .product-detail__layout .product-detail__content .available-size {
-  width: 162px;
-  height: 48px;
+  max-width: 162px;
+  max-height: 48px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -666,7 +666,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   color: #FC0303;
-  height: 47px;
+  max-height: 47px;
 }
 .product-detail .container .product-detail__layout .product-detail__content .product-amount {
   margin-top: 6px;
